@@ -11,7 +11,7 @@ public class TableCodeGenMain {
     public static void main(String[] args) {
 
         PackageConfigBuilder builder = new ProcessTestPackageConfigBuilder();
-        String tableNames = "t01_test";
+        String tableNames = "meta01_database_connection";
 
         log.info("table names: {}", tableNames);
         new CodeGenService("/template/").execute(

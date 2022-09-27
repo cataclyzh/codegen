@@ -14,13 +14,13 @@ public class ProcessTestPackageConfigBuilder implements PackageConfigBuilder {
 
     @Override
     public PackageConfig buildPackageConfig() {
-        return getPackageConfig("process2", "dt");
+        return getPackageConfig("dbscan", "dtc");
     }
 
     @Override
     public DataSourceConfig buildDataSourceConfig() {
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://192.168.0.2:3307/ga_process1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai");
+        dsc.setUrl("jdbc:mysql://192.168.56.101:13306/db_scan?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("mysql123");
